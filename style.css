@@ -1,0 +1,125 @@
+:root{
+    --color-primario:#1a1a1a;
+    --color-secuandario:#efefef;
+    --color-fondo:rgb(255, 216, 222);
+    --color-acento:#d841cb;
+    --color--texto:#1a1a1a;
+    --transicion:all 0.3s ease;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body{
+    font-family: 'Times New Roman', Times, serif;
+    background-color: rgb(169, 248, 248);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+
+}
+.card {
+    width: 320px;
+    background-color: rgb(51, 61, 58);
+    border-radius: 10px;
+    box-shadow: 10px 10px 10px rgba(0,0,0,0.3);
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out;
+
+
+}
+.card:hover{
+    transform: translateY(-30px);
+
+}
+
+.card_image{
+    width: 10%;
+    height: auto;
+    display: ruby-base;
+    
+    
+}
+.card_content{
+    padding: 20px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.card_content_title{
+    margin: 0 0 10px 0;
+    font-size: 1.5rem;
+    color:#333; 
+}
+.card_content_description {
+    font-size: 1rem;
+    color: #666;
+    line-height: 16px;
+    margin: 0 0 15px 0;
+
+}
+.card_actions{
+    padding: 0 20px 20px ;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+.card_actions_button {
+    flex-grow: 1;
+    padding: 10px;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+
+}
+.card_button--primary{
+    background-color: var(--color-acento);
+    color: azure;
+
+}
+.card_button--primary:hover{
+
+    background-color: #df0101;
+}
+
+.card_button--secondary{
+    background-color: var(--color-acento);
+    color: azure;
+
+}
+.card_button--secondary:hover{
+
+    background-color: var(--color-acento);
+}
+
+@media screen and (max-width:1920px) {
+    body{
+        background-color: rgb(245, 161, 161);
+    }
+    
+}
+@media screen and (max-width: 1280px) {
+    body{
+        background-color: rgb(212, 8, 151);
+    }
+    
+}
+@media screen and (max-width: 800px) {
+    body{
+        background-color: rgb(137, 131, 168);
+    }
+    
+}
+@media screen and (max-width: 400px) {
+    body{
+        background-color: rgb(144, 214, 123);
+    }
+    
+}
