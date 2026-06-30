@@ -41,10 +41,12 @@ body{
 .card_image{
     width: 10%;
     height: auto;
-    display: ruby-base;
-    
-    
+    display: block;
+    margin: 10px auto;
 }
+    
+    
+
 .card_content{
     padding: 20px;
     letter-spacing: 2px;
@@ -54,11 +56,11 @@ body{
 .card_content_title{
     margin: 0 0 10px 0;
     font-size: 1.5rem;
-    color:#333; 
+    color:#e2f4f5; 
 }
 .card_content_description {
     font-size: 1rem;
-    color: #666;
+    color: #ffe3e3;
     line-height: 16px;
     margin: 0 0 15px 0;
 
